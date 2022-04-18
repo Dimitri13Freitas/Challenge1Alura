@@ -1,0 +1,1 @@
+// fazer uma função para crip outra para decrip
