@@ -180,8 +180,9 @@ body {
     width:100%;
   }
   .decrip-content p {
+    text-align: center;
     margin:10px auto;
-    min-width:60ch;
+    width:100%;
   }
   .decrip-content img {
     display:none;
