@@ -72,10 +72,14 @@ body {
   color: #495057;
 }
 .btn {
-  width:100%;
+  justify-content: center;
+  display: flex;
+  max-width:630px;
   text-align: center;
+  gap:20px;
 }
 .crip-btn {
+  min-width:293px ;
   cursor: pointer;
   font-size: 16px;
   padding:24px 95px;
@@ -85,6 +89,7 @@ body {
   color:white;
 }
 .decrip-btn{
+  min-width:293px ;
   cursor: pointer;
   font-size: 16px;
   padding:24px 90px;
@@ -95,15 +100,15 @@ body {
 
 .footer {
   display: flex;
-  flex-wrap: wrap;
   border-top:3px solid #D2EBF8;
   justify-content: space-around;
   padding: 50px;
   margin-top:50px;
+  gap:20px;
 }
 .quote p {
   margin-top:10px;
-  width:500px;
+  max-width:500px;
   color:#495057;
 }
 .quote span {
@@ -155,6 +160,7 @@ body {
   font-size: 16px;
   margin: 0 auto;
   text-align: center;
+  justify-content: center;
 }
 .esconder {
   display: none;
@@ -177,12 +183,12 @@ body {
   }
   .decrip-content h2 {
     margin:20px auto;
-    width:100%;
+    max-width:100%;
   }
   .decrip-content p {
     text-align: center;
     margin:10px auto;
-    width:100%;
+    max-width:100%;
   }
   .decrip-content img {
     display:none;
@@ -197,5 +203,16 @@ body {
     justify-content: space-around;
     padding: 50px;
     margin-top:50px;
+  }
+}
+@media (max-width:500px) {
+
+  .btn {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    max-width:300px;
+    text-align: center;
+    gap:20px;
   }
 }
